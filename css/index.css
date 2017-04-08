@@ -1,0 +1,139 @@
+/* 搜索框样式*/
+.location{
+	position: relative;
+	height: 41px;
+	text-align: center;
+	border: 1px solid #ddd;
+	background-color: #f8f8f8;
+}
+.locationBox{
+	float: left;
+	width: 13%;
+	height: 41px;
+}
+.locationBox>img{
+	height: 30px;
+	margin: 5px 5px 0 0;
+	vertical-align: top;
+}
+.inputBox{
+	float: left;
+	height: 41px;
+	width: 65%;			
+}
+.inputBox>input{
+	margin-top: 5px;
+	color: #b9b9b9;
+	height: 30px;
+	width: 100%;
+	outline: none;
+	font-size: 13px;
+	line-height: 30px;
+	padding: 0 11px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+}
+.btnBox{
+	float: left;
+	height: 41px;
+	width: 22%;			
+}
+.btnBox>button{
+	margin: 5px 0px;
+	color: #b9b9b9;
+	height: 30px;
+	outline: none;
+	font-size: 13px;
+	padding: 0 19px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background-color: #f5f3f3;
+}
+
+
+/*列表*/
+.indexListBox{
+	color: #999;
+	padding: 10px 6px;
+	border-bottom: 1px solid #ddd;
+}
+.list{
+	width: 100%;
+}
+.list>img{
+	float: left;
+	width: 17%;
+	border: 1px solid #ddd;
+}
+.list>.text{
+	float: left;
+	width: 82%;
+	float: left;
+	padding: 0 0 0 11PX;
+}
+.list>.text>h3{
+	color: #2a2a2a;
+	font-size: 16px;
+	vertical-align: top;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.subBrank{
+	font-size: 14px;
+	margin: 8px 0;
+}
+.brankAdd{
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.more{
+	width: 100%;
+	font-size: 14px;
+	padding: 8px 0;
+	text-align: center;
+}
+.address{
+	width: 100%;
+	padding: 5px;
+	position: fixed;
+	bottom: 0;
+	background-color: #f8f8f8;
+}
+.address>a>img{
+	float: right;
+	width: 15px;
+}
+
+@media only screen and (max-width: 374px) {
+	.list>.text>h3{
+		font-size: 14px;
+	}
+	.subBrank{
+		font-size: 12px;
+		margin: 6px 0;
+	}
+	.brankAdd{
+		font-size: 12px;
+	}
+	.more{
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width:414px){
+	.list>.text>h3{
+		font-size: 18px;
+	}
+	.subBrank{
+		font-size: 16px;
+		margin: 8px 0;
+	}
+	.brankAdd{
+		font-size: 16px;
+	}
+	.more{
+		font-size: 16px;
+	}
+}

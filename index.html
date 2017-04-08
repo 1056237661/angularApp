@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title ng-bind='headTitle'></title>
+		<base href="/">
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+		<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+		<!--http-equiv="Content-Type" 是定义客户端请求的消息报头  application/xhtml+xml  XHTML系列文档的类型-->
+		<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+		<!--目的是不让页面缓存，每次访问必须到服务器读取   强制客户端不需要检测缓存，直接向服务器发送请求-->
+		<meta content="no-cache" http-equiv="pragma">
+		<!--Pragma(cache模式)说明：禁止浏览器从本地计算机的缓存中访问页面内容。 这样设定，访问者将无法脱机浏览！ -->
+		<meta content="0" http-equiv="expires">
+		<!--以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。  0,表示不缓存 -->
+		<meta content="telephone=no, address=no" name="format-detection">
+		<!--telephone=no就禁止了把数字转化为拨号链接！     address=no禁止跳转至地图-->
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<!--如果content设置为yes，Web应用会以全屏模式运行，反之，则不会-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/> 
+		<!--作用是控制状态栏显示样式	
+		    在web app应用下状态条（屏幕顶部条）的颜色；
+		    默认值为default（白色），可以定为black（黑色）和black-translucent（灰色半透明）。	
+		-->
+		<!-- 初始化样式 -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<!-- 公共样式 -->
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	</head>
+	<body>		
+		<div class="nav">				
+			<!-- 返回指令-->
+			<back ng-if="backFlag"></back>
+			
+			<!--标题-->
+			<span ng-bind='headTitle'></span>
+				
+			<!-- 收藏指令-->
+			<collect ng-if="collectFlag"></collect>
+		</div>
+		<div ng-view></div>
+	</body>
+	<script type="text/javascript" src="js/libs/require.js" data-main = "js/main" ></script>
+</html>

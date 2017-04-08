@@ -1,0 +1,39 @@
+.mask{		
+	display:none; 
+    position: absolute; 
+    top: 0px;bottom: 0;
+    left: 0;right: 0; 
+    background-color: rgba(0,0,0,.5);  
+    z-index: 1002;
+}
+.telList{
+	color: white;
+	width: 200px;
+	
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    
+    top: 50%;
+    
+	border: 1px solid seagreen;
+	border-bottom: none;
+}
+.telList>h3{
+	background-color: #F87352;
+	padding: 0.27027rem 0.135135rem;
+	font-size: 14px;
+}
+.telList>p{
+	color: black;
+	width: 100%;
+	vertical-align: middle;
+	background-color: white;
+	padding: 0.27027rem 0.135135rem;
+	font-size: 14px;
+	border-bottom: 1px solid seagreen;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

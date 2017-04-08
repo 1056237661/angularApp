@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+<div class="location box_sizing">
+	<address></address>
+	<search></search>
+	<searchtn></searchtn>
+	
+	<!--<div class="locationBox box_sizing">
+		<img src="img/dingwei.png"/>
+	</div>-->	
+	<!--<div class="inputBox box_sizing">
+		<input class="searchInput box_sizing"  type="text" placeholder="输入网点地址或名称" />
+	</div>-->
+	<!--<div class="btnBox box_sizing">
+		<button>搜索</button>
+	</div>-->
+	
+</div>
+
+<div  ng-repeat="v in data" class=" indexListBox box_sizing ">
+	<a href="#/shxq/:{{v.branch_id}}" id="v.branch_id">
+		<div class="list clear">
+			<img src="img/2.jpg"/>
+			<div class="text box_sizing ">
+				<h3 ng-bind="v.branch_name"></h3>
+				<p class="subBrank" ng-bind="v.branch_type" ></p>
+				<p class="brankAdd" ng-bind="v.branch_addr" ></p>
+			</div>
+		</div>
+	</a>
+</div>
+<p class="more"><a href="javascript:;">加载更多...</a></p>
+<div class="address box_sizing">
+	<span class="addressText" ng-bind="location.formatted_address">正在定位...</span>
+	<a href="#" class="addFrash"><img src="../img/sx.png"/></a>
+</div>

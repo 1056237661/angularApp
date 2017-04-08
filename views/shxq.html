@@ -1,0 +1,57 @@
+<link rel="stylesheet" type="text/css" href="../css/shxq.css"/>
+<div class=" indexListBox box_sizing ">
+	<a href="#" id="data.branch_id">
+		<div class="list clear">
+			<div class="imgbox">
+				<!--<img src="img/2.jpg" />-->
+			</div>
+			
+			<div class="text box_sizing ">
+				<h3 ng-bind="data.shop_name"></h3>
+				<div class="stars" ng-style="{'width':'69px'}">
+				</div>
+				<p class="brankAdd">
+					<img src="../img/cz.png"/><span ng-bind="data.view_count" class="view_count"></span>
+					<img src="../img/love.png"/><span ng-bind="data.favorite_count" class="favorite_count"></span>
+					<img src="../img/iconfont-qian.png"/><span ng-bind="data.capita_consumption" class="capita_consumption"></span>
+				</p>
+			</div>
+		</div>
+	</a>
+</div>
+
+<div class="box_sizing clear adrBox">
+	<div class="shAdrIcon left box_sizing center" >
+		<img src="../img/dingwei.png"/>
+	</div>
+	<p ng-bind="data.shop_adr" class="shAdrText left box"></p>
+	<div class="left box_sizing icon2 center">
+		<img src="../img/xiala.png"/>
+	</div>
+</div>
+<!-- 地址和电话 -->
+<div class="box_sizing clear adrBox">
+	<div class="shAdrIcon left box_sizing center" >
+		<img src="../img/tel.png"/>
+	</div>
+	<p tel-mask class="shAdrText left box">{{data.shop_tel}}</p>
+	<div class="left box_sizing icon2 center">
+		<img src="../img/xiala.png"/>
+	</div>
+</div>
+<div class="hr"></div>
+<div class="box_sizing">
+	<p class="contentBox box_sizing f							">
+		店铺优惠：<span>aaaaaa</span>
+	</p>
+	<p class="contentBox box_sizing"></p>
+	<p class="contentBox box_sizing">
+		<span class="red">有效期：</span><span>2015年1月11号</span>
+	</p>
+</div>
+<div class="hr"></div>
+
+<!-- 测试转换 -->
+<p class="contentBox box_sizing f							">
+	<a href="#/jrcs">金融超市</a>
+</p>

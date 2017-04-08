@@ -1,0 +1,20 @@
+define(['app'],function(app){
+	return app.config(["$routeProvider",function($routeProvider){
+		$routeProvider
+		.when("/",{
+			templateUrl:'views/yywd.html',
+			controller:'yywdCtrl'
+		})
+		.when("/shxq/:id",{
+			templateUrl:'views/shxq.html',
+			controller:'shxqCtrl'
+		})
+		.when('/jrcs',{
+			templateUrl:'views/jrcs.html',
+			controller:'jrcsCtrl'
+		})
+		.otherwise({
+			redirectTo:'/'
+		})
+	}])
+})

@@ -1,0 +1,94 @@
+.nav{
+	color: #FFF;
+	font-size: 18px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #F87352;
+	text-align: center;
+}
+.back{
+	height: 40px;
+	position: fixed;
+	left: 0;top: 0;
+}
+.back>a{
+	padding-left: 5px;
+	display: table-cell;
+	line-height: 35px;
+	vertical-align: middle;
+}
+.backIcon{
+	height: 50%;
+	vertical-align: middle;
+}
+.collect{
+	height: 40px;
+	position: fixed;
+	top: 0;right: 0;
+}
+.collect>a{
+	padding-right: 8px;
+	display: table-cell;
+	line-height: 39px;
+	vertical-align: middle;
+}
+.collectIcon{
+	height: 40%;
+	vertical-align: middle;
+}
+
+/*清除浮动*/
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0;
+	/*visibility: hidden;*/
+}
+
+/*box-sizing*/
+.box_sizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;				
+}
+
+/* 左右浮动*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+/* 居中*/
+.center{
+	text-align: center;
+}
+
+/* 颜色*/
+.red{
+	color: red;
+}
+
+/* 字体设置 */
+.f12{
+	font-size: 12px;
+}
+.f14{
+	font-size: 14px;
+}
+.f16{
+	font-size: 16px;
+}
+.f18{
+	font-size: 18px;
+}
+h3{
+	font-weight: bolder !important;
+}
+p{
+	color: #838383;
+}
